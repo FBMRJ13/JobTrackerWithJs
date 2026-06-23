@@ -38,11 +38,11 @@
 </div>
 <div class="card card-border bg-base-100 flex justify-center items-center">
      <h2 class="card-title">Interviewed</h2>
-  <p class="text-green-500 font-bold">0</p>
+  <p class="text-green-500 font-bold" id="interviewCount">0</p>
 </div>
 <div class="card card-border bg-base-100 flex justify-center items-center">
      <h2 class="card-title">Rejected</h2>
-  <p class="text-red-500 font-bold">0</p>
+  <p class="text-red-500 font-bold" id="rejectedCount">0</p>
 </div>
 
 </div>
@@ -53,6 +53,7 @@
 <!-- Available Job Section -->
 
 <section class="max-w-6xl mx-auto space-y-3.5 pb-3.5">
+
 <div class="availableJob font-bold flex justify-between mt-6">
     
  <h1 class="text-2xl">Available Jobs</h1>
@@ -80,8 +81,12 @@
 <!-- job cards -->
 
 
-<section class="max-w-6xl mx-auto space-x-6 pb-3.5 mt-5 space-y-5">
-    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5">
+<section id="allCardContainer" class="max-w-6xl mx-auto space-x-6 pb-3.5 mt-5 space-y-5 ">
+
+    <!-- card-1 -->
+
+
+    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5" id="card-1">
   <div class="companyName flex justify-between items-center">
     <div>
         <h1 class="font-bold">Mobile First Corp</h1>
@@ -95,12 +100,12 @@
 Full-time 
 •
  $130,000 - $175,000</p>
- <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl">Not Applied</p>
+ <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl"  id="status-1">Not Applied</p>
  <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
 
  <div class="intRej space-x-2.5">
-    <button class="btn border-green-500 text-green-500">INTERVIEW</button>
-    <button class="btn border-red-500 text-red-500">REJECTED</button>
+    <button class="btn border-green-500 text-green-500" onclick="addToInterview('card-1','status-1')">INTERVIEW</button>
+    <button class="btn border-red-500 text-red-500" onclick="addToRejected('card-1','status-1')">REJECTED</button>
 
  </div>
 
@@ -110,7 +115,7 @@ Full-time
 <!-- second card -->
 
 
-    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5">
+    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5" id="card-2">
   <div class="companyName flex justify-between items-center">
     <div>
         <h1 class="font-bold">WebFlow Agency</h1>
@@ -124,12 +129,12 @@ Full-time
 Part-time 
 •
  $80,000 - $120,000</p>
- <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl">Not Applied</p>
+ <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl" id="status-2">Not Applied</p>
  <p> Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
 
  <div class="intRej space-x-2.5">
-    <button class="btn border-green-500 text-green-500">INTERVIEW</button>
-    <button class="btn border-red-500 text-red-500">REJECTED</button>
+    <button class="btn border-green-500 text-green-500" onclick="addToInterview('card-2','status-2')">INTERVIEW</button>
+    <button class="btn border-red-500 text-red-500" onclick="addToRejected('card-2','status-2')">REJECTED</button>
 
  </div>
 
@@ -139,7 +144,7 @@ Part-time
 <!-- third card -->
 
 
-    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5">
+    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5" id="card-3">
   <div class="companyName flex justify-between items-center">
     <div>
         <h1 class="font-bold">DataViz Solutions</h1>
@@ -153,13 +158,13 @@ Part-time
  Full-time
  •
  $125,000 - $165,000</p>
- <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl">Not Applied</p>
+ <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl" id="status-3">Not Applied</p>
  <p>Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.
 </p>
 
  <div class="intRej space-x-2.5">
-    <button class="btn border-green-500 text-green-500">INTERVIEW</button>
-    <button class="btn border-red-500 text-red-500">REJECTED</button>
+    <button class="btn border-green-500 text-green-500" onclick="addToInterview('card-3','status-3')">INTERVIEW</button>
+    <button class="btn border-red-500 text-red-500" onclick="addToRejected('card-3','status-3')">REJECTED</button>
 
  </div>
 
@@ -169,7 +174,7 @@ Part-time
 <!-- card-4 -->
 
 
-    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5">
+    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5" id="card-4">
   <div class="companyName flex justify-between items-center">
     <div>
         <h1 class="font-bold">CloudFirst Inc</h1>
@@ -183,12 +188,12 @@ Part-time
  Full-time
  •
  $140,000 - $190,000</p>
- <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl">Not Applied</p>
+ <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl" id="status-4">Not Applied</p>
  <p>Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
 
  <div class="intRej space-x-2.5">
-    <button class="btn border-green-500 text-green-500">INTERVIEW</button>
-    <button class="btn border-red-500 text-red-500">REJECTED</button>
+    <button class="btn border-green-500 text-green-500" onclick="addToInterview('card-4','status-4')">INTERVIEW</button>
+    <button class="btn border-red-500 text-red-500" onclick="addToRejected('card-4','status-4')">REJECTED</button>
 
  </div>
 
@@ -197,7 +202,7 @@ Part-time
 
 <!-- card-5 -->
 
-    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5">
+    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5" id="card-5">
   <div class="companyName flex justify-between items-center">
     <div>
         <h1 class="font-bold">Innovation Labs</h1>
@@ -211,12 +216,12 @@ Part-time
  Full-time
  •
  $110,000 - $150,000</p>
- <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl">Not Applied</p>
+ <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl" id="status-5">Not Applied</p>
  <p>Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p>
 
  <div class="intRej space-x-2.5">
-    <button class="btn border-green-500 text-green-500">INTERVIEW</button>
-    <button class="btn border-red-500 text-red-500">REJECTED</button>
+    <button class="btn border-green-500 text-green-500"  onclick="addToInterview('card-5','status-5')">INTERVIEW</button>
+    <button class="btn border-red-500 text-red-500" onclick="addToRejected('card-5','status-5')">REJECTED</button>
 
  </div>
 
@@ -227,7 +232,7 @@ Part-time
 <!-- card-6 -->
 
 
-    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5">
+    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5" id="card-6">
   <div class="companyName flex justify-between items-center">
     <div>
         <h1 class="font-bold">MegaCorp Solutions</h1>
@@ -241,12 +246,12 @@ Part-time
 Full-time 
 •
  $130,000 - $170,00</p>
- <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl">Not Applied</p>
+ <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl" id="status-6">Not Applied</p>
  <p>Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p>
 
  <div class="intRej space-x-2.5">
-    <button class="btn border-green-500 text-green-500">INTERVIEW</button>
-    <button class="btn border-red-500 text-red-500">REJECTED</button>
+    <button class="btn border-green-500 text-green-500"  onclick="addToInterview('card-6','status-6')">INTERVIEW</button>
+    <button class="btn border-red-500 text-red-500" onclick="addToRejected('card-6','status-6')" >REJECTED</button>
 
  </div>
 
@@ -256,7 +261,7 @@ Full-time
 <!-- card-7 -->
 
 
-    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5">
+    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5" id="card-7">
   <div class="companyName flex justify-between items-center">
     <div>
         <h1 class="font-bold">StartupXYZ</h1>
@@ -270,12 +275,12 @@ Full-time
 Full-time 
 •
  $120,000 - $160,000</p>
- <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl">Not Applied</p>
+ <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl" id="status-7">Not Applied</p>
  <p>Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p>
 
  <div class="intRej space-x-2.5">
-    <button class="btn border-green-500 text-green-500">INTERVIEW</button>
-    <button class="btn border-red-500 text-red-500">REJECTED</button>
+    <button class="btn border-green-500 text-green-500" onclick="addToInterview('card-7','status-7')">INTERVIEW</button>
+    <button class="btn border-red-500 text-red-500" onclick="addToRejected('card-7','status-7')">REJECTED</button>
 
  </div>
 
@@ -285,7 +290,7 @@ Full-time
 <!-- card-8 -->
 
 
-    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5">
+    <div class="card w-full bg-base-100 card-xl shadow-sm p-5 space-y-5" id="card-8">
   <div class="companyName flex justify-between items-center">
     <div>
         <h1 class="font-bold">TechCorp Industries</h1>
@@ -299,12 +304,12 @@ Full-time
 Full-time 
 •
  $130,000 - $175,000</p>
- <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl">Not Applied</p>
+ <p class="font-bold bg-blue-200 w-fit p-2.5 rounded-2xl" id="status-8">Not Applied</p>
  <p>We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
 
  <div class="intRej space-x-2.5">
-    <button class="btn border-green-500 text-green-500">INTERVIEW</button>
-    <button class="btn border-red-500 text-red-500">REJECTED</button>
+    <button class="btn border-green-500 text-green-500" onclick="addToInterview('card-8','status-8')">INTERVIEW</button>
+    <button class="btn border-red-500 text-red-500" onclick="addToRejected('card-8','status-8')">REJECTED</button>
 
  </div>
 
@@ -314,10 +319,41 @@ Full-time
 
 
 
+<!-- section for interview tab where interviewed card will be stored -->
+
+<section class="storeOnlyInterview  max-w-6xl mx-auto space-x-6 pb-3.5 mt-5 space-y-5 " id="interviewTab">
+
+<h1 class="font-bold text-2xl">Interview Section</h1>
+</section>
+
+<!-- section for rejected tab where rejected card will be stored -->
+
+<section class="storeOnlyRejected  max-w-6xl mx-auto space-x-6 pb-3.5 mt-5 space-y-5 " id="rejectedTab">
+
+    <h1 class="font-bold text-2xl">Rejected Section</h1>
+    
+
+</section>
 
 
 
+<!-- no job available -->
 
+<section class="max-w-6xl mx-auto space-x-6 pb-3.5 mt-5 hidden">
+<div class="card w-full bg-base-100 card-xl shadow-sm space-y-5 flex justify-center items-center  p-5">
+ 
+<small><img src="jobs.png" alt=""></small>
+<p>No jobs available</p>
+<p  class="text-gray-400">Check back soon for new job opportunities</p>
+</div>
+
+    
+</section>
+
+
+
+<script src="script/interview.js"></script>
+<script src="script/rejected.js"></script>
 
 
 </body>
