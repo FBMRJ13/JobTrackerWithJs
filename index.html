@@ -58,8 +58,8 @@
     
  <h1 class="text-2xl">Available Jobs</h1>
  <p class="space-x-3">
-   <small class=""><span>0</span>of</small> 
-   <small><span>8 </span>jobs</small> 
+   <small class="hidden"><span>0</span>  of</small> 
+   <small><span id="updateNum">8</span>  jobs</small> 
 
  </p>
 
@@ -93,7 +93,7 @@
         <p  class="text-gray-400">React Native Developer</p>
     </div>
 
- <button class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
+ <button onclick="deleteBtn('card-1','status-1')" class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
 </div>
  <p  class="text-gray-400">Remote
  • 
@@ -122,7 +122,7 @@ Full-time
         <p  class="text-gray-400">Web Designer & Developer</p>
     </div>
 
- <button class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
+ <button onclick="deleteBtn('card-2','status-2')" class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
 </div>
  <p  class="text-gray-400">Los Angeles, CA
  • 
@@ -151,7 +151,7 @@ Part-time
         <p  class="text-gray-400">Data Visualization Specialist</p>
     </div>
 
- <button class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
+ <button onclick="deleteBtn('card-3','status-3')" class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
 </div>
  <p  class="text-gray-400">Boston, MA 
 •
@@ -181,7 +181,7 @@ Part-time
         <p  class="text-gray-400">Backend Developer</p>
     </div>
 
- <button class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
+ <button onclick="deleteBtn('card-4','status-4')" class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
 </div>
  <p  class="text-gray-400">Seattle, WA
  •
@@ -209,7 +209,7 @@ Part-time
         <p  class="text-gray-400">UI/UX Engineer</p>
     </div>
 
- <button class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
+ <button onclick="deleteBtn('card-5','status-5')" class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
 </div>
  <p  class="text-gray-400">Austin, TX
  •
@@ -239,7 +239,7 @@ Part-time
         <p  class="text-gray-400">JavaScript Developer</p>
     </div>
 
- <button class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
+ <button onclick="deleteBtn('card-6','status-6')" class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
 </div>
  <p  class="text-gray-400">New York, NY
  • 
@@ -268,7 +268,7 @@ Full-time
         <p  class="text-gray-400">Full Stack Engineer</p>
     </div>
 
- <button class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
+ <button  onclick="deleteBtn('card-7','status-7')"  class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
 </div>
  <p  class="text-gray-400">Remote
  • 
@@ -297,7 +297,7 @@ Full-time
         <p  class="text-gray-400">Senior Frontend Developer</p>
     </div>
 
- <button class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
+ <button onclick="deleteBtn('card-8','status-8')"  class="btn rounded-full"><i class="fa-solid fa-trash"></i></button>
 </div>
  <p  class="text-gray-400">San Francisco, CA
  • 
@@ -353,6 +353,7 @@ Full-time
 <script src="script/interview.js"></script>
 <script src="script/rejected.js"></script>
 <script src="script/buttonFunction.js"></script>
+<script src="script/delete.js"></script>
 
 
 </body>
