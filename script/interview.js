@@ -46,6 +46,9 @@ if(num==0){
             
 
         }
+
+        const updateNum=document.getElementById("updateNum3");
+    updateNum.innerText=document.getElementById("rejectedCount").innerText+ " of";
         
 
 

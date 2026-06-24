@@ -46,7 +46,8 @@ if(num==0){
              addChild.classList.remove("hidden");
         }
         
-
+const updateNum=document.getElementById("updateNum3");
+    updateNum.innerText=document.getElementById("interviewCount").innerText+ " of";
 
     }
 }

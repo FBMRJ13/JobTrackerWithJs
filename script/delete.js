@@ -18,6 +18,8 @@ const forRej=document.getElementById("rejectedCount");
         const addChild=document.getElementById("noJob");
             addChild.classList.remove("hidden");
      }
+     const updateNum=document.getElementById("updateNum3");
+    updateNum.innerText=document.getElementById("interviewCount").innerText;
 
  }
  else if(inText=="Rejected"){
@@ -28,6 +30,8 @@ const forRej=document.getElementById("rejectedCount");
         const addChild=document.getElementById("noJob");
             addChild.classList.remove("hidden");
      }
+     const updateNum=document.getElementById("updateNum3");
+    updateNum.innerText=document.getElementById("rejectedCount").innerText;
 
  }
 

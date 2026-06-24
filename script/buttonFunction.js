@@ -38,4 +38,19 @@ else{
 
 forView.classList.remove("hidden");
 }
+
+if(btnName=="intButton"){
+    const updateNum=document.getElementById("updateNum3");
+    updateNum.innerText=document.getElementById("interviewCount").innerText + " of";
+    updateNum.classList.remove("hidden");
+}
+else if(btnName=="rejButton"){
+    const updateNum=document.getElementById("updateNum3");
+    updateNum.innerText=document.getElementById("rejectedCount").innerText + " of";
+    updateNum.classList.remove("hidden");
+}
+else{
+    document.getElementById("updateNum3").classList.add("hidden");
+}
+
 }
