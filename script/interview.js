@@ -13,5 +13,41 @@ function addToInterview(id, status) {
         info.innerText = "Interview";
         const count=document.getElementById("interviewCount");
         count.innerText=Number(count.innerText)+1;
+
+        const container=document.getElementById("allCardContainer");
+        const num=container.children.length;
+        if(num==0){
+            const addChild=document.getElementById("noJob");
+            addChild.classList.remove("hidden");
+           
+        }
+    }
+    else if(statusInfo=="Rejected"){
+ const forAdd = document.getElementById("interviewTab");
+
+        
+        forAdd.appendChild(getCard);
+
+        info.innerText = "Interview";
+        const count=document.getElementById("interviewCount");
+        count.innerText=Number(count.innerText)+1;
+     const Newcount=document.getElementById("rejectedCount");
+        const forRejection=Number(Newcount.innerText)-1;
+         
+         Newcount.innerText=forRejection;
+
+
+        const container=document.getElementById("rejectedTab");
+        const num=container.children.length; 
+        
+if(num==0){
+     const addChild=document.getElementById("noJob");
+            addChild.classList.remove("hidden");
+            
+
+        }
+        
+
+
     }
 }
